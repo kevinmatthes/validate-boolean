@@ -52,7 +52,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - if: ! contains (fromJSON ('["false", "true"]'), inputs.check)
+    - if: inputs.check != 'false' && inputs.check != 'true'
       name: Check whether the input does not equal 'true' or 'false'.
       run: bash -c 'exit 64'
       shell: bash
