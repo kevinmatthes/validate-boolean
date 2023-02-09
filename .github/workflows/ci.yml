@@ -43,8 +43,7 @@ jobs:
     name: bors
     needs:
       - cffconvert
-      - selftest-invalid
-      - selftest-valid
+      - selftest
     runs-on: ubuntu-latest
     steps:
       - name: success
@@ -64,26 +63,8 @@ jobs:
         with:
           args: --validate
 
-  selftest-invalid:
-    name: selftest-invalid
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3.3.0
-        with:
-          persist-credentials: false
-
-      - name: validation
-        uses: ./
-        with:
-          check: invalid
-
-      - if: failure ()
-        name: success
-        run: bash -c 'exit 0'
-
-  selftest-valid:
-    name: selftest-valid
+  selftest:
+    name: selftest
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -95,10 +76,15 @@ jobs:
         uses: ./
         with:
           check: ${{ matrix.value }}
+
+      - if: failure ()
+        name: success
+        run: bash -c 'exit 0'
     strategy:
       matrix:
         value:
           - false
           - true
+          - invalid
 
 ################################################################################
