@@ -52,13 +52,13 @@ inputs:
 runs:
   using: composite
   steps:
-    - if: inputs.check == 'false' || inputs.check == 'true'
-      name: Check whether the input equals 'true' or 'false'.
-      run: bash -c 'exit 0'
+    - if: inputs.check != 'false' && inputs.check != 'true'
+      name: Check whether the input does not equal 'true' or 'false'.
+      run: bash -c 'exit 64'
       shell: bash
 
-    - name: The input is invalid.
-      run: bash -c 'exit 64'
+    - name: The input is valid.
+      run: bash -c 'exit 0'
       shell: bash
 
 ################################################################################
