@@ -1,0 +1,60 @@
+.. A new scriv changelog fragment.
+..
+.. Uncomment the header that is right (remove the leading dots).
+..
+Added
+.....
+
+- Bors:  settings
+
+- bump2version:  settings
+
+- CHANGELOG
+
+- CI:  CFF validation
+
+- CITATION.cff
+
+- CODEOWNERS
+
+- create this repository
+
+- Dependabot:  GitHub Action setup
+
+- GitHub Action workflow:  CI
+
+- GitHub Action workflow:  release
+
+- GitHub Action workflow:  Scriv fragment creation
+
+- license:  GPL-3.0
+
+- README
+
+- Scriv:  settings
+
+.. Changed
+.. .......
+..
+.. - A bullet item for the Changed category.
+..
+.. Deprecated
+.. ..........
+..
+.. - A bullet item for the Deprecated category.
+..
+.. Fixed
+.. .....
+..
+.. - A bullet item for the Fixed category.
+..
+.. Removed
+.. .......
+..
+.. - A bullet item for the Removed category.
+..
+.. Security
+.. ........
+..
+.. - A bullet item for the Security category.
+..
