@@ -50,4 +50,48 @@ All pending changelog entries are stored in `changelog.d`_.
 
 .. scriv-insert-here
 
+.. _changelog-0.1.0:
+
+0.1.0 — 2023-02-09
+------------------
+
+Added
+.....
+
+- Bors:  settings
+
+- bump2version:  settings
+
+- CHANGELOG
+
+- CI:  CFF validation
+
+- CITATION.cff
+
+- CODEOWNERS
+
+- create this repository
+
+- Dependabot:  GitHub Action setup
+
+- GitHub Action workflow:  CI
+
+- GitHub Action workflow:  release
+
+- GitHub Action workflow:  Scriv fragment creation
+
+- license:  GPL-3.0
+
+- README
+
+- Scriv:  settings
+
+- README:  Bors badge
+
+- README:  CI badge
+
+- README:  license badge
+
+- action.yml
+
 .. -------------------------------------------------------------------------- ..
