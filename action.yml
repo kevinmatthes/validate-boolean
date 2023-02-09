@@ -20,66 +20,45 @@
 ################################################################################
 ##
 ##  AUTHOR      Kevin Matthes
-##  BRIEF       The CI of this project.
+##  BRIEF       A GitHub Action to check whether an input value equals either
+##              `'true'` or `'false'`.
 ##  COPYRIGHT   GPL-3.0
 ##  DATE        2023
-##  FILE        ci.yml
+##  FILE        action.yml
 ##  NOTE        See `LICENSE' for full license.
 ##              See `README.md' for project details.
 ##
 ################################################################################
 
-name: ci
+# The icon with which this Action is presented in the Marketplace.
+branding:
+  color: green
+  icon: thumbs-up
 
-on:
-  pull_request:
-  push:
+# About this Action.
+author: 'https://github.com/kevinmatthes'
+description: |
+  A GitHub Action to check whether an input value equals either `'true'` or
+  `'false'`.
+name: validate-boolean
 
-permissions:
-  contents: read
+# The information to be input.
+inputs:
+  check:
+    description: The input to check.
+    required: true
 
-jobs:
-  bors:
-    name: bors
-    needs:
-      - cffconvert
-      - selftest
-    runs-on: ubuntu-latest
-    steps:
-      - name: success
-        run: bash -c 'exit 0'
+# The actual behaviour of this Action.
+runs:
+  using: composite
+  steps:
+    - if: inputs.check != 'false' && inputs.check != 'true'
+      name: Check whether the input does not equal 'true' or 'false'.
+      run: bash -c 'exit 64'
+      shell: bash
 
-  cffconvert:
-    name: cffconvert
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3.3.0
-        with:
-          persist-credentials: false
-
-      - name: cffconvert
-        uses: citation-file-format/cffconvert-github-action@2.0.0
-        with:
-          args: --validate
-
-  selftest:
-    name: selftest
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3.3.0
-        with:
-          persist-credentials: false
-
-      - name: validation
-        uses: ./
-        with:
-          check: ${{ matrix.value }}
-    strategy:
-      matrix:
-        value:
-          - false
-          - true
+    - name: The input is valid.
+      run: bash -c 'exit 0'
+      shell: bash
 
 ################################################################################
