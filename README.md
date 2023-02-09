@@ -32,6 +32,7 @@
 
 ## Summary
 
+[![](https://bors.tech/images/badge_small.svg)](https://app.bors.tech/repositories/61987)
 [![](https://github.com/kevinmatthes/validate-boolean/workflows/ci/badge.svg)](https://github.com/kevinmatthes/validate-boolean/workflows/ci)
 [![](https://img.shields.io/github/license/kevinmatthes/validate-boolean)](https://github.com/kevinmatthes/validate-boolean)
 
