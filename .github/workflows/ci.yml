@@ -76,15 +76,10 @@ jobs:
         uses: ./
         with:
           check: ${{ matrix.value }}
-
-      - if: failure ()
-        name: success
-        run: bash -c 'exit 0'
     strategy:
       matrix:
         value:
           - false
           - true
-          - invalid
 
 ################################################################################
