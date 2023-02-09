@@ -43,6 +43,8 @@ jobs:
     name: bors
     needs:
       - cffconvert
+      - selftest-invalid
+      - selftest-valid
     runs-on: ubuntu-latest
     steps:
       - name: success
@@ -61,5 +63,32 @@ jobs:
         uses: citation-file-format/cffconvert-github-action@2.0.0
         with:
           args: --validate
+
+  selftest-invalid:
+    name: selftest-invalid
+    runs-on: ubuntu-latest
+    steps:
+      - name: validation
+        uses: ./
+        with:
+          check: invalid
+
+      - if: failure ()
+        name: success
+        run: bash -c 'exit 0'
+
+  selftest-valid:
+    name: selftest-valid
+    runs-on: ubuntu-latest
+    steps:
+      - name: validation
+        uses: ./
+        with:
+          check: ${{ matrix.value }}
+    strategy:
+      matrix:
+        value:
+          - false
+          - true
 
 ################################################################################
