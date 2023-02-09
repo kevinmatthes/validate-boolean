@@ -57,8 +57,7 @@ runs:
       run: bash -c 'exit 0'
       shell: bash
 
-    - if: failure ()
-      name: The check failed.
+    - name: The input is invalid.
       run: bash -c 'exit 64'
       shell: bash
 
