@@ -77,6 +77,10 @@ This GitHub Action has only one **mandatory** input named `check`.  This input
 is of type string.  If this string is equal to `'true'` or `'false'`, this
 Action will succeed.  In any other case, this Action will fail.
 
+The branding settings were chosen due to the default use case of this Action.
+The symbol `thumbs-up` shall represent the check while the colour green
+symbolises the intended positive result of it ("okay").
+
 To apply this Action, just add the following line to the step section of a
 GitHub Action workflow job.
 
