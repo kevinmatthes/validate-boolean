@@ -74,8 +74,8 @@ This GitHub Action will check whether the given input, `check`, equals either
 `'true'` or `'false'`.  It is recommended to execute this Action on a Linux
 runner.  This Action requires a Bash shell environment.  There are no outputs.
 
-To apply this Action, just add the following line to the step section of a
-GitHub Action workflow job.
+To apply this Action, just add the following to the step section of a GitHub
+Action workflow job.
 
 ```yaml
       - uses: kevinmatthes/validate-boolean@v0.1.1
