@@ -85,7 +85,7 @@ To apply this Action, just add the following line to the step section of a
 GitHub Action workflow job.
 
 ```yaml
-      - uses: kevinmatthes/validate-boolean@v0.1.0
+      - uses: kevinmatthes/validate-boolean@v0.1.1
         with:
           check: ${{ inputs.value-to-check }}
 ```
