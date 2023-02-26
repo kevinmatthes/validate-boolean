@@ -71,9 +71,8 @@ follows:
 ## Description
 
 This GitHub Action will check whether the given input, `check`, equals either
-the string `'true'` or the string `'false'`.  It is recommended to execute this
-Action on a Linux runner.  This Action requires a Bash shell environment.  There
-are no outputs.
+`'true'` or `'false'`.  It is recommended to execute this Action on a Linux
+runner.  This Action requires a Bash shell environment.  There are no outputs.
 
 To apply this Action, just add the following line to the step section of a
 GitHub Action workflow job.
