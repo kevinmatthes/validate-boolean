@@ -40,9 +40,10 @@ A GitHub Action to check whether an input value equals either `'true'` or
 `'false'`.
 
 1. [License](#license)
-2. [Description](#description)
-3. [Inputs](#inputs)
+1. [Description](#description)
+1. [Inputs](#inputs)
    1. [`check`](#check)
+1. [Branding Information](#branding-information)
 
 ## License
 
@@ -70,16 +71,8 @@ follows:
 ## Description
 
 This GitHub Action will check whether the given input, `check`, equals either
-the string `'true'` or the string `'false'`.  It is recommended to execute this
-Action on a Linux runner.  This Action requires a Bash shell environment.
-
-This GitHub Action has only one **mandatory** input named `check`.  This input
-is of type string.  If this string is equal to `'true'` or `'false'`, this
-Action will succeed.  In any other case, this Action will fail.
-
-The branding settings were chosen due to the default use case of this Action.
-The symbol `thumbs-up` shall represent the check while the colour green
-symbolises the intended positive result of it ("okay").
+`'true'` or `'false'`.  It is recommended to execute this Action on a Linux
+runner.  This Action requires a Bash shell environment.  There are no outputs.
 
 To apply this Action, just add the following line to the step section of a
 GitHub Action workflow job.
@@ -97,5 +90,11 @@ GitHub Action workflow job.
 This input value is **required** and of type string.  If it equals the values
 `'true'` or `'false'`, this Action will succeed.  Else, it will fail with exit
 code 64.  This is the code for wrong user input according to `sysexits.h`.
+
+## Branding Information
+
+The branding of this action uses the icon `thumbs-up` on a green background.
+Both shall represent the performed check as well as the intended positive
+result ("okay").
 
 <!----------------------------------------------------------------------------->
