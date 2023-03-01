@@ -7,6 +7,8 @@ Added
 
 - documentation:  software license of Bash
 
+- documentation:  software license of ``exit`` (Bash built-in command)
+
 - README:  document new directory ``LICENSEs``
 
 .. Changed
