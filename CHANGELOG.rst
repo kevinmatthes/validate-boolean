@@ -50,6 +50,30 @@ All pending changelog entries are stored in `changelog.d`_.
 
 .. scriv-insert-here
 
+.. _changelog-0.1.2:
+
+0.1.2 — 2023-03-01
+------------------
+
+Added
+.....
+
+- documentation:  software license of Bash
+
+- documentation:  software license of ``exit`` (Bash built-in command)
+
+- README:  document new directory ``LICENSEs``
+
+Changed
+.......
+
+- README:  adjust branding information description
+
+Fixed
+.....
+
+- README:  typo "line" (singular)
+
 .. _changelog-0.1.1:
 
 0.1.1 — 2023-02-26
