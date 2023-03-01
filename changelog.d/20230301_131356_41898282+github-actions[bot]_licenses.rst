@@ -2,11 +2,13 @@
 ..
 .. Uncomment the header that is right (remove the leading dots).
 ..
-.. Added
-.. .....
-..
-.. - A bullet item for the Added category.
-..
+Added
+.....
+
+- documentation:  software license of Bash
+
+- README:  document new directory ``LICENSEs``
+
 .. Changed
 .. .......
 ..
