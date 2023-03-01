@@ -33,7 +33,7 @@
 ..
 .. _.others/bash/LICENSE-GPL-3.0: .others/bash/LICENSE-GPL-3.0
 ..
-.. _bash: https://git.savannah.gnu.org/cgit/bash.git
+.. _Bash: https://git.savannah.gnu.org/cgit/bash.git
 ..
 .. _exit: https://git.savannah.gnu.org/cgit/bash.git
 ..
@@ -52,7 +52,7 @@ location of a copy being stored in this repository.
 Called CLIs
 -----------
 
-`bash`_
+`Bash`_
 .......
 
 - local copy:  `.others/bash/LICENSE-GPL-3.0`_
