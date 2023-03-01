@@ -17,11 +17,11 @@
 ..
 .. - A bullet item for the Deprecated category.
 ..
-.. Fixed
-.. .....
-..
-.. - A bullet item for the Fixed category.
-..
+Fixed
+.....
+
+- documentation:  "Bash" instead of "bash" in README of ``LICENSEs``
+
 .. Removed
 .. .......
 ..
