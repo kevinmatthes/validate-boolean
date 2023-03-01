@@ -35,6 +35,8 @@
 ..
 .. _bash: https://git.savannah.gnu.org/cgit/bash.git
 ..
+.. _exit: https://git.savannah.gnu.org/cgit/bash.git
+..
 .. -------------------------------------------------------------------------- ..
 
 LICENSEs
@@ -51,6 +53,13 @@ Called CLIs
 -----------
 
 `bash`_
+.......
+
+- local copy:  `.others/bash/LICENSE-GPL-3.0`_
+
+- original license:  https://git.savannah.gnu.org/cgit/bash.git/tree/COPYING
+
+`exit`_
 .......
 
 - local copy:  `.others/bash/LICENSE-GPL-3.0`_
